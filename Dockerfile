@@ -4,6 +4,8 @@ RUN apt update -y
 
 COPY komiser /usr/bin/komiser
 
+COPY . .
+
 RUN chmod +x /usr/bin/komiser
 
 EXPOSE 3000
