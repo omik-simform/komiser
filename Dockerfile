@@ -7,4 +7,4 @@ COPY komiser /usr/bin/komiser
 RUN chmod +x /usr/bin/komiser
 
 EXPOSE 3000
-ENTRYPOINT ["komiser", "start", "--config", "./config.toml"]
+ENTRYPOINT ["komiser", "start"]
