@@ -1,4 +1,4 @@
-FROM public.ecr.aws/docker/library/ubuntu:jammy
+FROM --platform=linux/arm64 public.ecr.aws/docker/library/ubuntu:jammy
 
 RUN apt update -y
 
