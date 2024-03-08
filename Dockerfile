@@ -11,8 +11,7 @@ ENV SEGMENT_WRITE_KEY $SEGMENT_WRITE_KEY
 ENV VERSION $VERSION
 
 COPY komiser /usr/bin/komiser
-RUN chmod +x /usr/bin/komiser && \
-    mkdir /lib64 && ln -s /lib/libc.musl-x86_64.so.1 /lib64/ld-linux-x86-64.so.2
+RUN chmod +x /usr/bin/komiser
 
 EXPOSE $PORT
 ENTRYPOINT ["komiser", "start"]
